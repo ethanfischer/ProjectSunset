@@ -7,5 +7,6 @@ public class PlayerSpawn : MonoBehaviour
     void Start()
     {
         Player.Instance.transform.position = transform.position;
+        Destroy(gameObject);
     }
 }
