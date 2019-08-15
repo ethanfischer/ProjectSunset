@@ -3,7 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Sunset : MonoBehaviour
 {
-    private const float TIME_LIMIT = 3;
+    [Tooltip("The amount of time in seconds it takes for the sun to set")]
+    public float TimeLimit = 180; //default to 3 mins
     private float _elapsedTime = 0.0f;
     private bool _didTimeExpire = false;
 
@@ -21,7 +22,7 @@ public class Sunset : MonoBehaviour
     {
         _elapsedTime += Time.deltaTime;
 
-        if (_elapsedTime >= TIME_LIMIT)
+        if (_elapsedTime >= TimeLimit)
         {
             Debug.Log("Timer expired");
             _didTimeExpire = true;
