@@ -7,7 +7,7 @@ public class BananaPeel : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.IsBall())
+        if (other.IsPlayer())
         {
             SendBallInRandomDirection(other);
         }
