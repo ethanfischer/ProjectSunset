@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public static Player Instance;
+    public GameObject Ball;
     private Rigidbody _rigidBody;
 
     void Awake()

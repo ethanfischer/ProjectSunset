@@ -25,6 +25,6 @@ public class PlayerSpawn : MonoBehaviour
 
     public void Spawn()
     {
-        Player.Instance.transform.position = transform.position;
+        Player.Instance.Ball.transform.position = transform.position;
     }
 }
