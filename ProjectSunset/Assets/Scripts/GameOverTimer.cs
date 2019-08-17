@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DigitalRuby.WeatherMaker;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameOverTimer : MonoBehaviour
@@ -8,6 +9,12 @@ public class GameOverTimer : MonoBehaviour
 
     private float _elapsedTime = 0.0f;
     private bool _didTimeExpire = false;
+
+    public void Reset()
+    {
+        _elapsedTime = 0;
+        _didTimeExpire = false;
+    }
 
     private void Update()
     {
@@ -31,7 +38,7 @@ public class GameOverTimer : MonoBehaviour
         }
     }
 
-    private static void GameOver()
+    private void GameOver()
     {
         SceneManager.LoadScene(SceneNames.GAME_OVER, LoadSceneMode.Additive);
         Player.Instance.Freeze();

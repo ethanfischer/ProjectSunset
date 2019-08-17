@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DigitalRuby.WeatherMaker;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
@@ -12,6 +13,10 @@ public class Restart : MonoBehaviour
             SceneManager.LoadSceneAsync(SceneNames.TEST_LEVEL, LoadSceneMode.Additive);
             Player.Instance.Unfreeze();
             PlayerSpawn.Instance.Spawn();
+            var dayNight = FindObjectOfType<WeatherMakerDayNightCycleManagerScript>();
+            dayNight.TimeOfDay = DayNightSettings.InitialTimeOfDay;
+            var gameOverTimer = FindObjectOfType<GameOverTimer>();
+            gameOverTimer.Reset();
         }
     }
 }
