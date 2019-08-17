@@ -17,6 +17,12 @@ public class Player : MonoBehaviour
         Instance = this; 
     }
 
+    public void StopRolling()
+    {
+        var rigidBody = GetComponentInChildren<Rigidbody>();
+        rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+    }
+
     // Update is called once per frame
     void Update()
     {

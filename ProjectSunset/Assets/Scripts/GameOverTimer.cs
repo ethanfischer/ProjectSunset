@@ -27,7 +27,13 @@ public class GameOverTimer : MonoBehaviour
         {
             Debug.Log("Timer expired");
             _didTimeExpire = true;
-            SceneManager.LoadScene(SceneNames.GAME_OVER);
+            GameOver();
         }
+    }
+
+    private static void GameOver()
+    {
+        SceneManager.LoadScene(SceneNames.GAME_OVER, LoadSceneMode.Additive);
+        Player.Instance.StopRolling();
     }
 }
