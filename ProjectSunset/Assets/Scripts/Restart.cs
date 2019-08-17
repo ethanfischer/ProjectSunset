@@ -32,7 +32,6 @@ public class Restart : MonoBehaviour
     {
         var dayNight = FindObjectOfType<WeatherMakerDayNightCycleManagerScript>();
         dayNight.TimeOfDay = DayNightSettings.InitialTimeOfDay;
-        dayNight.DateTime = DayNightSettings.InitialDateTime;
     }
 
     private static void ResetGameOverTimer()
