@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOverTimer : MonoBehaviour
+public class Sunset : MonoBehaviour
 {
-    [Tooltip("The amount of time in seconds it takes before a gameover is triggered")]
+    [Tooltip("The amount of time in seconds it takes for the sun to set")]
     public float TimeLimit = 30;
 
     private float _elapsedTime = 0.0f;
@@ -27,13 +27,7 @@ public class GameOverTimer : MonoBehaviour
         {
             Debug.Log("Timer expired");
             _didTimeExpire = true;
-            PauseTimeAndLoadGameOverScene();
+            SceneManager.LoadScene(SceneNames.GAME_OVER);
         }
-    }
-
-    private static void PauseTimeAndLoadGameOverScene()
-    {
-        Time.timeScale = 0;
-        SceneManager.LoadScene(SceneNames.GAME_OVER, LoadSceneMode.Additive);
     }
 }
