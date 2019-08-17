@@ -7,7 +7,11 @@ public class Restart : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene(SceneNames.MAIN);
+            SceneManager.UnloadSceneAsync(SceneNames.GAME_OVER);
+            SceneManager.UnloadSceneAsync(SceneNames.TEST_LEVEL);
+            SceneManager.LoadSceneAsync(SceneNames.TEST_LEVEL, LoadSceneMode.Additive);
+            Player.Instance.Unfreeze();
+            PlayerSpawn.Instance.Spawn();
         }
     }
 }

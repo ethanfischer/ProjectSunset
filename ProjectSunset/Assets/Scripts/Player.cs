@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public static Player Instance; 
+    public static Player Instance;
+    private Rigidbody _rigidBody;
 
     void Awake()
     {
@@ -15,12 +16,18 @@ public class Player : MonoBehaviour
         }
 
         Instance = this; 
+
+        _rigidBody = GetComponentInChildren<Rigidbody>();
     }
 
-    public void StopRolling()
+    public void Freeze()
     {
-        var rigidBody = GetComponentInChildren<Rigidbody>();
-        rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+        _rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+    }
+
+    public void Unfreeze()
+    {
+        _rigidBody.constraints = RigidbodyConstraints.None;
     }
 
     // Update is called once per frame

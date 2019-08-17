@@ -34,6 +34,6 @@ public class GameOverTimer : MonoBehaviour
     private static void GameOver()
     {
         SceneManager.LoadScene(SceneNames.GAME_OVER, LoadSceneMode.Additive);
-        Player.Instance.StopRolling();
+        Player.Instance.Freeze();
     }
 }
