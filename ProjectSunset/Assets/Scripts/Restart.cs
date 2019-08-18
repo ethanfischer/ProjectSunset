@@ -4,6 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
+    private GameOverTimer timer;
+
+    private void Start()
+    {
+        timer = GameObject.FindGameObjectWithTag("GameOverTimer").GetComponent<GameOverTimer>();
+    }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
@@ -12,6 +19,7 @@ public class Restart : MonoBehaviour
             ResetPlayer();
             ResetDayNightCycle();
             ResetGameOverTimer();
+            timer.expireTar = false;
         }
     }
 

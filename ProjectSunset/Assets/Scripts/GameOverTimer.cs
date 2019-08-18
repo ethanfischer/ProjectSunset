@@ -10,6 +10,8 @@ public class GameOverTimer : MonoBehaviour
     private float _elapsedTime = 0.0f;
     private bool _didTimeExpire = false;
 
+    public bool expireTar = false;
+
     public void Reset()
     {
         _elapsedTime = 0;
@@ -34,6 +36,7 @@ public class GameOverTimer : MonoBehaviour
         {
             Debug.Log("Timer expired");
             _didTimeExpire = true;
+            expireTar = true;
             GameOver();
         }
     }

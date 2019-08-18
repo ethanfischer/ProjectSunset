@@ -1103,6 +1103,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOverTimer
       objectReference: {fileID: 0}
+    - target: {fileID: 6511032466199559458, guid: a5620ad2a1cac9443bdb5e1f93107792,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameOverTimer
+      objectReference: {fileID: 0}
     - target: {fileID: 6511032466199559452, guid: a5620ad2a1cac9443bdb5e1f93107792,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1161,7 +1166,7 @@ PrefabInstance:
     - target: {fileID: 6511032466199559453, guid: a5620ad2a1cac9443bdb5e1f93107792,
         type: 3}
       propertyPath: TimeLimit
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5620ad2a1cac9443bdb5e1f93107792, type: 3}
