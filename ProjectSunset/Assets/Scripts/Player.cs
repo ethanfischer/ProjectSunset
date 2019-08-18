@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public static Player Instance; 
+    public static Player Instance;
 
     void Awake()
     {
@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
             Debug.LogError("There is more than one instance of player in the game");
         }
 
-        Instance = this; 
+        Instance = this;
     }
 
     // Update is called once per frame
