@@ -10,7 +10,7 @@ public class GameOverTimer : MonoBehaviour
     private float _elapsedTime = 0.0f;
     private bool _didTimeExpire = false;
 
-    public bool expireTar = false;
+    [HideInInspector] public bool expireTar = false;
 
     public void Reset()
     {
