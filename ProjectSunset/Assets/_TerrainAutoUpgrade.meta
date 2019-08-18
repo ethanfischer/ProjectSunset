@@ -1,8 +1,22 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:ProjectSunset/Assets/_TerrainAutoUpgrade.meta
 guid: 04de6b4f6f421534b8fd415931e91298
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
+========
+guid: 8be052d6fe65a8c41ba627f2ddb1079a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 8574412962073106934
+>>>>>>>> a403732f0da8184c838f968358d608d28b8a6da5:ProjectSunset/Assets/_TerrainAutoUpgrade/layer_Grass0146_5_SGoodDirt _NRM(16.000,16.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer.meta
+=======
+guid: 0413a6921db67fd49875d4d32fc0e895
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+>>>>>>> a403732f0da8184c838f968358d608d28b8a6da5
   userData: 
   assetBundleName: 
   assetBundleVariant: 
