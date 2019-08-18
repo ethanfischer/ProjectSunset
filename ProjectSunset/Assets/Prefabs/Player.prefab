@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8008171472948061487}
+  - component: {fileID: 8008171474508499201}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8008171474508499201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008171472948061488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72242bf7683bb384fa958c122b334596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ball: {fileID: 8008171474336035584}
 --- !u!1 &8008171473961089331
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,13 +72,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8008171473961089331}
-  m_LocalRotation: {x: 0.29883263, y: -0, z: -0, w: 0.9543056}
-  m_LocalPosition: {x: 0, y: 3.43, z: -2.72}
+  m_LocalRotation: {x: 0.17996936, y: -0, z: -0, w: 0.9836722}
+  m_LocalPosition: {x: 0, y: 2.69, z: -3.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8008171472948061487}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 34.775, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.736, y: 0, z: 0}
 --- !u!20 &8008171473961089329
 Camera:
   m_ObjectHideFlags: 0
@@ -127,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736cc030f9759be44b2e61cd34b5fb94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 8008171474336035584}
+  Ball: {fileID: 8008171474336035584}
 --- !u!114 &8008171474336003479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LeftRightSpeed: 1.5
-  ForwardMaxSpeed: 0.7
+  ForwardMaxSpeed: 0.9
 --- !u!1001 &8008171474336003488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,14 +218,6 @@ PrefabInstance:
     - target: {fileID: 5400000, guid: 753ea9ccf9eee6c42a0954ec8663b992, type: 3}
       propertyPath: m_AngularDrag
       value: 0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 753ea9ccf9eee6c42a0954ec8663b992, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 753ea9ccf9eee6c42a0954ec8663b992, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 753ea9ccf9eee6c42a0954ec8663b992, type: 3}

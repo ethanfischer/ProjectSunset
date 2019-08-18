@@ -4,9 +4,27 @@ using UnityEngine;
 
 public class PlayerSpawn : MonoBehaviour
 {
+    private static PlayerSpawn _instance;
+    public static PlayerSpawn Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = GameObject.FindObjectOfType<PlayerSpawn>();
+            }
+
+            return _instance;
+        }
+    }
+
     void Start()
     {
-        Player.Instance.transform.position = transform.position;
-        Destroy(gameObject);
+        Spawn();
+    }
+
+    public void Spawn()
+    {
+        Player.Instance.Ball.transform.position = transform.position;
     }
 }
