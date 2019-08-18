@@ -1,13 +1,20 @@
-﻿using UnityEngine;
+﻿using DigitalRuby.WeatherMaker;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Sunset : MonoBehaviour
+public class GameOverTimer : MonoBehaviour
 {
-    [Tooltip("The amount of time in seconds it takes for the sun to set")]
+    [Tooltip("The amount of time in seconds a gameover is triggered")]
     public float TimeLimit = 30;
 
     private float _elapsedTime = 0.0f;
     private bool _didTimeExpire = false;
+
+    public void Reset()
+    {
+        _elapsedTime = 0;
+        _didTimeExpire = false;
+    }
 
     private void Update()
     {
@@ -27,7 +34,13 @@ public class Sunset : MonoBehaviour
         {
             Debug.Log("Timer expired");
             _didTimeExpire = true;
-            SceneManager.LoadScene(SceneNames.GAME_OVER);
+            GameOver();
         }
+    }
+
+    private void GameOver()
+    {
+        SceneManager.LoadScene(SceneNames.GAME_OVER, LoadSceneMode.Additive);
+        Player.Instance.Freeze();
     }
 }
