@@ -19392,7 +19392,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289281111498416}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19422,6 +19422,8 @@ MonoBehaviour:
   IsPermanent: 1
   CameraType: 0
   AllowCameras:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -38237,7 +38239,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464957344995672}
-  m_LocalRotation: {x: -0.331206, y: 0.883216, z: -0.331206, w: 0.023123426}
+  m_LocalRotation: {x: -0.3290545, y: 0.87747866, z: -0.3290545, w: 0.11609301}
   m_LocalPosition: {x: 0, y: 500, z: 0}
   m_LocalScale: {x: 36000, y: 36000, z: 36000}
   m_Children: []
@@ -43398,6 +43400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4402940320576058}
   - component: {fileID: 114439030903958290}
+  - component: {fileID: 512812981}
   m_Layer: 2
   m_Name: DayNightCycle
   m_TagString: Untagged
@@ -43434,7 +43437,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DayNightProfile: {fileID: 11400000, guid: 0423bc1310fa6dd4f807dde6e8232034, type: 2}
-  TimeOfDayLabel: 11:49 AM
+  TimeOfDayLabel: 11:06 AM
+--- !u!114 &512812981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597508566338440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bea3f862434bcf47ad43871704cf085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1616679408357746
 GameObject:
   m_ObjectHideFlags: 0
@@ -43466,9 +43481,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616679408357746}
-  m_LocalRotation: {x: -0.252304, y: -0.42471328, z: -0.124529116, w: 0.8604963}
-  m_LocalPosition: {x: 4617.839, y: -3532.4224, z: -3538.4097}
-  m_LocalScale: {x: 288, y: 288, z: 288}
+  m_LocalRotation: {x: 0.022662286, y: 0.8541829, z: 0.51813334, w: -0.037360534}
+  m_LocalPosition: {x: 3136531.8, y: -70066904, z: 36393964}
+  m_LocalScale: {x: 3292282.2, y: 3292282.2, z: 3292282.2}
   m_Children: []
   m_Father: {fileID: 4361423566697034}
   m_RootOrder: 0
@@ -43524,7 +43539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsSun: 0
-  RotateYDegrees: 0
+  RotateYDegrees: 270
   OrbitType: 0
   Scale: 0.04
   LightMode: 2
@@ -62803,9 +62818,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953708332601736}
-  m_LocalRotation: {x: 0.09565437, y: 0.9040826, z: -0.30576527, w: 0.28282952}
-  m_LocalPosition: {x: -1304.372, y: 1948.1079, z: 1880.727}
-  m_LocalScale: {x: 3600.0002, y: 3600.0002, z: 3600.0002}
+  m_LocalRotation: {x: 0.60679674, y: 0.000000023688587, z: -0.000000018083956, w: 0.794857}
+  m_LocalPosition: {x: -51026.52, y: 31766166, z: -8653581}
+  m_LocalScale: {x: 41153530, y: 41153530, z: 41153530}
   m_Children: []
   m_Father: {fileID: 4356086052924466}
   m_RootOrder: 0
@@ -62861,7 +62876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsSun: 1
-  RotateYDegrees: 0
+  RotateYDegrees: 270
   OrbitType: 0
   Scale: 0.005
   LightMode: 2
