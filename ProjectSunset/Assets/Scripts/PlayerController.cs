@@ -2,12 +2,17 @@
 
 public class PlayerController : MonoBehaviour
 {
+
+    #region Vars
+    #region Public Vars
     public float LeftRightSpeed = 1.5f;
     public float ForwardMaxSpeed = 0.7f;
     [Range(0, 3)] public float AccelerationSpeed = 3f;
     [Range(0, 5)] public float TarForwardStickyness = 0.5f;
     [Range(1, 5)] public float TarHorizontalStickyness = 2f;
+    #endregion Public Vars
 
+    #region Private Vars
     private bool InTar = false;
     private float CurrentMaxSpeed;
     private float CurrentSpeed;
@@ -17,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody _rigidBody;
 
     private Vector3 lastPos = Vector3.zero;
+    #endregion Private Vars
+    #endregion Vars
 
     void Start()
     {
