@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public static Player Instance;
-    public GameObject Ball;
-    private Rigidbody _rigidBody;
+    public static Player Instance; 
 
     void Awake()
     {
@@ -17,18 +15,6 @@ public class Player : MonoBehaviour
         }
 
         Instance = this; 
-
-        _rigidBody = GetComponentInChildren<Rigidbody>();
-    }
-
-    public void Freeze()
-    {
-        _rigidBody.constraints = RigidbodyConstraints.FreezeAll;
-    }
-
-    public void Unfreeze()
-    {
-        _rigidBody.constraints = RigidbodyConstraints.None;
     }
 
     // Update is called once per frame
