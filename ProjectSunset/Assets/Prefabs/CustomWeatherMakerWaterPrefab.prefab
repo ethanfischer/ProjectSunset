@@ -34,7 +34,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8319001405465101914}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -205.3, z: 0}
   m_LocalScale: {x: 10000, y: 1024, z: 10000}
   m_Children: []
@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac04562cadacb5478fa086ee28ac87f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaterProfile: {fileID: 11400000, guid: 80e0932ccb06a224ab5215ec6cb339e4, type: 2}
+  WaterProfile: {fileID: 11400000, guid: 32b0561ee0af9714fac4b51e743c858d, type: 2}
   UnderwaterAudioSource: {fileID: 8238004064185019128}
   SplashAudioSource: {fileID: 8237624868636211950}
 --- !u!33 &8286924088902644198
@@ -94,7 +94,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d11d3da78d0695c4cb5bf74e878c3e85, type: 2}
+  - {fileID: 2100000, guid: cba3a4b698d83664dbae00ed47230775, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
