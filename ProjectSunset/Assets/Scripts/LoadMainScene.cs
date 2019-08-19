@@ -7,6 +7,7 @@ public class LoadMainScene : MonoBehaviour
     {
         if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName(SceneNames.MAIN))
         {
+            print("loading scene");
             SceneManager.LoadScene(SceneNames.MAIN);
         }
     }

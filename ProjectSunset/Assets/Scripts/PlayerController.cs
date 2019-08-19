@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody _rigidBody;
 
     private Vector3 lastPos = Vector3.zero;
+
+    private GameOverTimer timer;
     #endregion Private Vars
     #endregion Vars
 
@@ -29,6 +31,8 @@ public class PlayerController : MonoBehaviour
     {
         _rigidBody = GetComponent<Rigidbody>();
         CurrentLRSpeed = LeftRightSpeed;
+
+        timer = GameObject.FindGameObjectWithTag("GameOverTimer").GetComponent<GameOverTimer>();
     }
 
     void FixedUpdate()
@@ -103,7 +107,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag.Equals("tar")) InTar = true;
+        if (other.tag.Equals("tar") && !timer.expireTar) InTar = true;
+        else InTar = false;
     }
 
     private void OnTriggerExit(Collider other)
