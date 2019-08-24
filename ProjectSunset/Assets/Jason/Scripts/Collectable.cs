@@ -22,7 +22,10 @@ public class Collectable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        pickUpAS.Play();
-        Destroy(this.gameObject);
+        if (other.tag == "Player")
+        {
+            pickUpAS.Play();
+            Destroy(this.gameObject);
+        }
     }
 }
