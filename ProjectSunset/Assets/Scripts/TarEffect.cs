@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TarEffect : MonoBehaviour
 {
-    [Range(0, 1)] public float TarForwardKickback = 0.6f;
+    [Range(0, 5)] public float TarForwardKickback = 0.6f;
     [Range(0, 1)] public float TarForwardMaxSpeeed = 0f;
 
     [Range(1, 5)] public float TarHorizontalStickyness = 2.5f;
