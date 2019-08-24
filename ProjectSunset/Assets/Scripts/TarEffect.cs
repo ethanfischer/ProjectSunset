@@ -23,7 +23,9 @@ public class TarEffect : MonoBehaviour
 
     private void FixedUpdate()
     {
-        TarMechanics();
+        //TarMechanics();
+        dControls.CurrentLRSpeed = pController.LeftRightSpeed;
+        dControls.CurrentMaxSpeed = pController.ForwardMaxSpeed;
     }
 
     private void TarMechanics()
