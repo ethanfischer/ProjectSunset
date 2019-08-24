@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 185979700}
   - component: {fileID: 185979701}
+  - component: {fileID: 185979702}
   m_Layer: 0
   m_Name: TrashSFX
   m_TagString: Untagged
@@ -239,6 +240,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &185979702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185979699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 846725f16a2e27946b9b30c852c73cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 185979701}
 --- !u!1 &305455718
 GameObject:
   m_ObjectHideFlags: 0
