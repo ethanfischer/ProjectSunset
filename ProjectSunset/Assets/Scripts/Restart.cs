@@ -8,24 +8,33 @@ public class Restart : MonoBehaviour
 
     private void Start()
     {
-        timer = GameObject.FindGameObjectWithTag("GameOverTimer").GetComponent<GameOverTimer>();
+        //timer = GameObject.FindGameObjectWithTag("GameOverTimer").GetComponent<GameOverTimer>();
     }
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            ResetScenes();
-            ResetPlayer();
-            ResetDayNightCycle();
-            ResetGameOverTimer();
-            timer.expireTar = false;
+            DoRestart();
         }
+    }
+
+    public static void DoRestart()
+    {
+        ResetScenes();
+        ResetPlayer();
+        ResetDayNightCycle();
+        ResetGameOverTimer();
+        //timer.expireTar = false;
     }
 
     private static void ResetScenes()
     {
-        SceneManager.UnloadSceneAsync(SceneNames.GAME_OVER);
+        if (SceneManager.GetSceneByName(SceneNames.GAME_OVER) != null)
+        {
+            SceneManager.UnloadSceneAsync(SceneNames.GAME_OVER);
+        }
+            
         SceneManager.UnloadSceneAsync(SceneNames.TEST_LEVEL);
         SceneManager.LoadSceneAsync(SceneNames.TEST_LEVEL, LoadSceneMode.Additive);
     }
