@@ -14,6 +14,8 @@ public class TrashCan : MonoBehaviour
     public GameObject bananaGO;
     Rigidbody lidRB;
     public Collider triggerCol;
+    public AudioSource canFall;
+    public AudioClip lidFly;
 
     void Start()
     {
@@ -34,6 +36,7 @@ public class TrashCan : MonoBehaviour
         {
             spillOnce = false;
             lidRB.AddForce(transform.forward * (force * 5));
+            canFall.PlayOneShot(lidFly);
             for (int i = 0; i < 2; i++)
             {
                 Instantiate(trashPile, new Vector3(transform.position.x + 2f, transform.position.y +i, transform.position.z), Quaternion.identity);
@@ -51,6 +54,7 @@ public class TrashCan : MonoBehaviour
         if (other.tag == "Player")
         {
             trashCanRB.AddForce(transform.right * force);
+            canFall.Play();
             triggerCol.enabled = false;
         }
     }
