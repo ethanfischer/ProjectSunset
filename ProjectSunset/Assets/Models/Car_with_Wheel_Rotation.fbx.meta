@@ -1,66 +1,44 @@
 fileFormatVersion: 2
-guid: 746befdc2e7d39d4a9ea898810301598
+guid: 1cf7438828a144346af3b9130fab3fa7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Carbody
-    100002: Controller_CAR_ROLL_LIMITS
-    100004: Controller_DRIFT
-    100006: CTRL_ROLL
-    100008: //RootNode
-    100010: WHEEL_ROOT
-    100012: wheelLB
-    100014: wheelLB_001
-    100016: wheelLF
-    100018: wheelLF_001
-    100020: wheelRB
-    100022: wheelRB_001
-    100024: wheelRF
-    100026: wheelRF_001
-    400000: Carbody
-    400002: Controller_CAR_ROLL_LIMITS
-    400004: Controller_DRIFT
-    400006: CTRL_ROLL
-    400008: //RootNode
-    400010: WHEEL_ROOT
-    400012: wheelLB
-    400014: wheelLB_001
-    400016: wheelLF
-    400018: wheelLF_001
-    400020: wheelRB
-    400022: wheelRB_001
-    400024: wheelRF
-    400026: wheelRF_001
+    100000: Car_with_Wheel_Rotation
+    100002: //RootNode
+    100004: Controller_CAR_ROLL_LIMITS
+    100006: Controller_DRIFT
+    100008: CTRL_ROLL
+    100010: wheelLB
+    100012: wheelLF
+    100014: wheelRB
+    100016: wheelRF
+    400000: Car_with_Wheel_Rotation
+    400002: //RootNode
+    400004: Controller_CAR_ROLL_LIMITS
+    400006: Controller_DRIFT
+    400008: CTRL_ROLL
+    400010: wheelLB
+    400012: wheelLF
+    400014: wheelRB
+    400016: wheelRF
     2100000: 01 - Default
     2100002: 03 - Default
     2100004: 02 - Default
-    2300000: Carbody
+    2300000: Car_with_Wheel_Rotation
     2300002: wheelLB
-    2300004: wheelLB_001
-    2300006: wheelLF
-    2300008: wheelLF_001
-    2300010: wheelRB
-    2300012: wheelRB_001
-    2300014: wheelRF
-    2300016: wheelRF_001
-    3300000: Carbody
+    2300004: wheelLF
+    2300006: wheelRB
+    2300008: wheelRF
+    3300000: Car_with_Wheel_Rotation
     3300002: wheelLB
-    3300004: wheelLB_001
-    3300006: wheelLF
-    3300008: wheelLF_001
-    3300010: wheelRB
-    3300012: wheelRB_001
-    3300014: wheelRF
-    3300016: wheelRF_001
-    4300000: Carbody
+    3300004: wheelLF
+    3300006: wheelRB
+    3300008: wheelRF
+    4300000: Car_with_Wheel_Rotation
     4300002: wheelRF
     4300004: wheelLF
     4300006: wheelLB
     4300008: wheelRB
-    4300010: wheelLB_001
-    4300012: wheelRB_001
-    4300014: wheelLF_001
-    4300016: wheelRF_001
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
