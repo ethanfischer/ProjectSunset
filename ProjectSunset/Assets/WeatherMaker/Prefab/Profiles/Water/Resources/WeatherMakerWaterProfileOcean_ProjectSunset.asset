@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d37803f4f90d14ebca09a0c89a07ad, type: 3}
   m_Name: WeatherMakerWaterProfileOcean_ProjectSunset
   m_EditorClassIdentifier: 
-  Material: {fileID: 2100000, guid: d4ad3a54f6fc5584c8fefbcf42df5ab2, type: 2}
+  Material: {fileID: 2100000, guid: a0ef468006a78604b8d6b2df49c9aace, type: 2}
   WaterDepthThreshold: 1
   WindAffectsWaves: 0
   UnderwaterAudioClip: {fileID: 8300000, guid: 8f59e0dc733e0b5478e827457733fb33, type: 3}
