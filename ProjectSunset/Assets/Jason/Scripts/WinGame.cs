@@ -41,6 +41,8 @@ public class WinGame : MonoBehaviour
             playAgain.enabled = true;
             Player.Instance.Freeze();
             //Restart.DoRestart();
+            var gameOverTimer = FindObjectOfType<GameOverTimer>();
+            gameOverTimer.Stop();
         }
     }
 

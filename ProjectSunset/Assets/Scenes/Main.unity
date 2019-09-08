@@ -272,7 +272,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!84 &683544643
+--- !u!84 &843411900
 RenderTexture:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1123,32 +1123,32 @@ PrefabInstance:
     - target: {fileID: 3867811649604308802, guid: 7186891680fb62a4f9faf7cfedff50aa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 994.57404
+      value: -0.091479905
       objectReference: {fileID: 0}
     - target: {fileID: 3867811649604308802, guid: 7186891680fb62a4f9faf7cfedff50aa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 97554.23
+      value: 1973.1323
       objectReference: {fileID: 0}
     - target: {fileID: 3867811649604308802, guid: 7186891680fb62a4f9faf7cfedff50aa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 336473.44
+      value: 7097.786
       objectReference: {fileID: 0}
     - target: {fileID: 3867811649604308802, guid: 7186891680fb62a4f9faf7cfedff50aa,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 438351.6
+      value: 9046.064
       objectReference: {fileID: 0}
     - target: {fileID: 3867811649604308802, guid: 7186891680fb62a4f9faf7cfedff50aa,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 438351.6
+      value: 9046.064
       objectReference: {fileID: 0}
     - target: {fileID: 3867811649604308802, guid: 7186891680fb62a4f9faf7cfedff50aa,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 438351.6
+      value: 9046.064
       objectReference: {fileID: 0}
     - target: {fileID: 3867811649604308802, guid: 7186891680fb62a4f9faf7cfedff50aa,
         type: 3}

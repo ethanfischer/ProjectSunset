@@ -12,6 +12,8 @@ public class GameOverTimer : MonoBehaviour
 
     [HideInInspector] public bool expireTar = false;
 
+    bool wasStopped = false;
+
     public void Reset()
     {
         _elapsedTime = 0;
@@ -20,7 +22,7 @@ public class GameOverTimer : MonoBehaviour
 
     private void Update()
     {
-        if (_didTimeExpire)
+        if (_didTimeExpire || wasStopped)
         {
             return;
         }
@@ -45,5 +47,10 @@ public class GameOverTimer : MonoBehaviour
     {
         SceneManager.LoadScene(SceneNames.GAME_OVER, LoadSceneMode.Additive);
         Player.Instance.Freeze();
+    }
+
+    public void Stop()
+    {
+        wasStopped = true;
     }
 }
